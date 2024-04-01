@@ -8,7 +8,7 @@ import ModuleRoutes from './Kanbas/Modules/routes.js';
 const app = express();
 app.use(
     cors({
-      origin: "hhttps://a5--zesty-tarsier-816747.netlify.app",
+      origin: "https://a5--zesty-tarsier-816747.netlify.app",
       credentials: true,
     })
   );
