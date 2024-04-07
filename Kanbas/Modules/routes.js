@@ -1,4 +1,3 @@
-//import db from "../Database/index.js"; // TO BE REMOVED
 import * as dao from "./dao.js";
 
 function ModuleRoutes(app) {
