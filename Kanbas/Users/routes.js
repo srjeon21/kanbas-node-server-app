@@ -37,7 +37,8 @@ export default function UserRoutes(app) {
         req.session["currentUser"] = currentUser;
         res.json(currentUser);
     } else {
-        res.sendStatus(401);
+        res.status(401).json(
+            { message: "invalid username and/or password" });
     }
   };
   const signout = (req, res) => {
