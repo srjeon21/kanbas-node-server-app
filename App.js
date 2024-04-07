@@ -15,7 +15,7 @@ app.use(
     cors({
       //origin: ["http://localhost:3000", "https://a5--zesty-tarsier-816747.netlify.app"],
       credentials: true,
-      origin: process.env.FRONTEND_URL
+      origin: [process.env.FRONTEND_URL, process.env.FRONTEND_NETLIFY_URL]
     })
   );
 const sessionOptions = {
